@@ -15,4 +15,6 @@ In order to keep the design simplistic,
 - create direct dependencies between objects. I.e. here A -> B, concrete class A will istantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques
 - implement each required operation on the object graph in a single method that navigate the graph and compute the operation intead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
 
-Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. 
+Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. For every new feature request take not of the time required and of the difficulties that you faced because of the design.
+
+
