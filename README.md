@@ -4,6 +4,10 @@ This repositoriy contains two coding exercises to experience the impact of compo
 
 The exercises are based on concepts covered by this post: http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
 
+Prerequisites:
+- Practical understanding of basic design principles, SOLID principles and Simple Design
+- Experience with fundamental refactorind and design pattern of unit testing as in [Refactoring legacy code driven by tests] (https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples/blob/master/TDDMicroExercises/README.md)
+
 ## Exercise 1. Simplistic design
 
 The goal of this exercise is to experience the impact of simplistic design when new code changes are required.
