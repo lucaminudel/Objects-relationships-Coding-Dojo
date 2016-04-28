@@ -15,6 +15,17 @@ In order to keep the design simplistic,
 - create direct dependencies between objects. I.e. here A -> B, concrete class A will istantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques
 - implement each required operation on the object graph in a single method that navigate the graph and compute the operation intead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
 
-Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. For every new feature request take not of the time required and of the difficulties that you faced because of the design.
+Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. Everyone should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
+
+**The problem:** We want to model and connect different parts of a robot and apply some computation to these parts.
+
+(Each part has a battery with a capacity (Kilo Apmere Hour or KAh) and an on/off status. A robot part can be connected with and control other part)
+
+1. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+2. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+3. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+4. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+5. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+6. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 
 
