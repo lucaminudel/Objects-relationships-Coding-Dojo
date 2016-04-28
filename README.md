@@ -17,7 +17,7 @@ In order to keep the design simplistic,
 
 Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. Everyone should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
 
-**The problem:** We want to model and connect different parts of a robot and apply some computation to these parts.
+**The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and apply some computations to these parts.
 
 (Each part has a battery with a capacity (Kilo Apmere Hour or KAh) and an on/off status. A robot part can be connected with and control other part)
 
@@ -29,3 +29,7 @@ Implement the feature requests from this list. Implement one feature request at 
 6. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 
 
+
+## Exercise 2. Target design
+
+...
