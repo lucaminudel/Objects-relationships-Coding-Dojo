@@ -12,10 +12,10 @@ The exercises are based on concepts covered by this post: http://blogs.ugidotnet
 
 The goal of this exercise is to experience the impact of simplistic design when new code changes are required.
 In order to keep the design simplistic, 
-- create direct dependencies between objects. I.e. here A -> B, concrete class A will istantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques
-- implement each required operation on the object graph in a single method that navigate the graph and compute the operation intead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
+- create direct dependencies between objects. I.e. here A -> B, concrete class A will istantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques;
+- each feature that requires computations on the whole object graph, should be implemented in a single method that navigate the graph and compute the operation instead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
 
-Implement the feature requests from this list. Implement one feature request at time, without anticipating the following ones. You are encouraged to write unit tests. Everyone should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
+The list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. You are encouraged to write unit tests. Every feature request should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
 
 **The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and apply some computations to these parts.
 
