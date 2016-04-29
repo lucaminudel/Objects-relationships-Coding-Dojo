@@ -1,4 +1,4 @@
-# Objects relationships encapsulation via composition - Coding-Dojo
+# Objects relationships - Coding-Dojo
 
 This repositoriy contains two coding exercises to experience the impact of composition and other techniques on objects relationships encapsulation compared to the simplistic design approach.
 
