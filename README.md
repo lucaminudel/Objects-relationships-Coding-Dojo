@@ -22,11 +22,14 @@ The list below contains all the feature requests to be implemented. Implement on
 (Each part has a battery with a capacity (Kilo Apmere Hour or KAh) and an on/off status. A robot part can be connected with and control other part)
 
 1. **left arm**
-  - [ ] Implement a robot left arm. 
+  - [x] Implement a robot left arm. 
 The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it's sufficient to implement just the "check" diagnostic command that writes, to the output console or to a log, the status of the arm in the form of this message: "Left are status check is ok."
-  - [ ] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
-  - [ ] Finally the left arm also has a current On/Off switch status.
-2. *robot bus*
+  - [x] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
+  - [x] Finally the left arm also has a current On/Off switch status.
+2. **robot bus**
+  - [x] the robot bus is electricity powered
+  - [x] it has an On/Off status like the left arm
+  - [x] the left arm is connected to the robot bus and when the robot bus receive a command, the command is sent to the left arm
 3. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 4. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 5. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
