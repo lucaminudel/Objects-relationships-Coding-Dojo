@@ -17,11 +17,14 @@ In order to keep the design simplistic,
 
 The list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. You are encouraged to write unit tests. Every feature request should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
 
-**The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and apply some computations to these parts.
+**The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and implement some features that act on all robot parts.
 
 (Each part has a battery with a capacity (Kilo Apmere Hour or KAh) and an on/off status. A robot part can be connected with and control other part)
 
-1. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
+1. **1st robot part**
+Implement a robot left arm. 
+The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it is sufficient that the only command implemented is the "check" disgnostic command that has the effect to write to the output console or to a log the status in the form of this message "Left are status check: ok."
+
 2. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 3. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
 4. TBD TBD TDB TBD TDB TBD TDB TBD TDB TBD TDB 
