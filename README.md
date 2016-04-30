@@ -19,8 +19,6 @@ The list below contains all the feature requests to be implemented. Implement on
 
 **The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and implement some features that act on all robot parts.
 
-(Each part has a battery with a capacity (Kilo Apmere Hour or KAh) and an on/off status. A robot part can be connected with and control other part)
-
 1. **left arm**
   - [x] Implement a robot left arm. 
 The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it's sufficient to implement just the "check" diagnostic command that writes, to the output console or to a log, the status of the arm in the form of this message: "Left arm status is ok."
