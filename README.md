@@ -1,6 +1,6 @@
 # Objects relationships - Coding-Dojo
 
-This repositoriy contains two coding exercises to experience the impact of composition and other techniques on objects relationships encapsulation compared to the simplistic design approach.
+This repository contains two coding exercises to experience the impact of composition and other techniques on objects relationships encapsulation compared to the simplistic design approach.
 
 
 **Prerequisites:**
@@ -11,7 +11,7 @@ This repositoriy contains two coding exercises to experience the impact of compo
 
 The goal of this exercise is to experience the impact of simplistic design when new code changes are required.
 In order to keep the design simplistic, 
-- create direct dependencies between objects. I.e. here A -> B, concrete class A will istantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques;
+- create direct dependencies between objects. I.e. here A -> B, concrete class A will instantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques;
 - each feature that requires computations on the whole object graph, should be implemented in a single method that navigate the graph and compute the operation instead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
 
 The list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. You are encouraged to write unit tests. Every feature request should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
@@ -82,7 +82,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
   - [x] implement a function that accept a log of the On/Off status from each part the robot and produce a report of the status of the whole robot composite. 
-  - [x] implement a function that accept the log of the max chanrge from each part of the robot and that calculate the total cost to charge all the internal batteries of the robot composite; the cost for one Ah is £0.2.
+  - [x] implement a function that accept the log of the max charge from each part of the robot and that calculate the total cost to charge all the internal batteries of the robot composite; the cost for one Ah is £0.2.
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
@@ -109,7 +109,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
 - **The composition design style** used in the 2nd exercise, encapsulates the knowledge and navigation of the object graph into the composite objects. As result, when there are changes at object graph, as for feature requests #7 #8 #10 and #11, changes required are confined to the objects directly involved and do not escalate to the rest of the object graph or to the dashboard functions navigating the graph
 - **The inversion of the dependency** used in the 2nd exercise, from the unstable objects more likely to change (the robot parts) to the more stable objects (the dashboard) limits the impact of changes that don’t impact the dashboard object, as for feature request #12
 - **Interfaces and adapter pattern** used in the 2nd exercise, abstract away differences between the robot parts and so they make it possible to compose objects in different ways, and they make it easier to work with a collection of robot parts.
-- **Better encapsulation without property getters** that can be avoided in the 2nd exercise for the On/Off status, the max charge and the relatioship because the composite design style encapsulate the object relationships of the graph and the visitor pattern encapsulate the reporting responsibility, so that they don't need to be accessed by the external functions of the dashboard.
+- **Better encapsulation without property getters** that can be avoided in the 2nd exercise for the On/Off status, the max charge and the relationship because the composite design style encapsulate the object relationships of the graph and the visitor pattern encapsulate the reporting responsibility, so that they don't need to be accessed by the external functions of the dashboard.
 
 
 This post shows in a very clear and visual way the concept of programming by composition that is used the 2nd exercise: http://blog.davidpeterson.co.uk/2011/01/object-oriented-example.html
