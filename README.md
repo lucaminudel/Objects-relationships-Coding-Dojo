@@ -2,7 +2,7 @@
 
 This repositoriy contains two coding exercises to experience the impact of composition and other techniques on objects relationships encapsulation compared to the simplistic design approach.
 
-The exercises are based on concepts covered by this post: http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
+The exercises are based on concepts covered by this post (there's no benefit in reading it before the exercise, read it after to connect the dots): http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
 
 **Prerequisites:**
 - Practical understanding of basic design principles, SOLID principles and Simple Design
