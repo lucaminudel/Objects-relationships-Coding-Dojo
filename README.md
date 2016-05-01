@@ -111,6 +111,6 @@ The left arm accepts and executes a command in the form of a string. For the sha
 - **interfaces and adapter pattern** that abstract away differences between the robot parts, ,are it possible to compose objects in different ways, and make it easier to work with a collection of robot parts.
 
 
+This post shows in a very clear and visual way the concept of programming by composition that is used the 2nd exercise.
 
-
-The exercises are based on concepts covered by this post (there's no benefit in reading it before the exercise, read it after to connect the dots): http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
+The key concept of the exercises are based on this post that should help you to connect the dots, and explain way the design of the 2nd exercise made it easier for you to implement some of the feature changes: http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
