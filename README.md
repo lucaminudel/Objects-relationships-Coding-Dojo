@@ -28,17 +28,17 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] it has an On/Off status like the left arm.
   - [x] the left arm is connected to the robot bus and when the robot bus receive a command, the command is sent to the left arm.
 3. **Right thigh**
-  - [x] the right thigh is connected to the robot bus from which can receive commands 
-  - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery
+  - [x] the right thigh is connected to the robot bus from which can receive commands.
+  - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
-  - [x] implement a function that reports the On/Off status of each part the robot as a report with with line per part that include the part name and the status
+  - [x] implement a function that reports the On/Off status of each part the robot as a report with with line per part that include the part name and the status.
   - [x] implement a function that calculate the total cost to charge all the internal batteries; the cost for one Ah is £0.2.
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
 6. **Neck and head**
   - [x] add a neck and a head and connect them to the robot bus. 
-  - [x] update the the two dashboard reports accordingly
+  - [x] update the the two dashboard reports accordingly.
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip has itself an On/Off status, a max charge and accepts commands as well.
   - [x] connect the arm, the thigh, the lower limb and the foot to hip. Add indentation to the On/Off status report to visually represent the tree structure.
@@ -71,24 +71,24 @@ As for the previous exercise, the list below contains all the feature requests t
 1. **Left arm**
   - [x] Implement a robot left arm. 
 The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it's sufficient to implement just the "check" diagnostic command that writes, to the output console or to a log, the status of the arm in the form of this message: "Left arm status is ok."
-  - [x] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
-  - [x] Finally the left arm also has a current On/Off switch status.
+  - [x] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. **No need to expose this a public getter.**
+  - [x] Finally the left arm also has a current On/Off switch status. **No need to expose this a public getter.**
 2. **Robot bus**
   - [x] the robot bus is electricity powered.
   - [x] it has an On/Off status like the left arm.
   - [x] the left arm is connected to the robot bus and when the robot bus receive a command, the command is sent to the left arm.
 3. **Right thigh**
-  - [x] the right thigh is connected to the robot bus from which can receive commands 
-  - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery
+  - [x] the right thigh is connected to the robot bus from which can receive commands.
+  - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
-  - [x] implement a function that reports the On/Off status of each part the robot as a report with with line per part that include the part name and the status
-  - [x] implement a function that calculate the total cost to charge all the internal batteries; the cost for one Ah is £0.2.
+  - [x] implement a function that accept a log of the On/Off status from each part the robot and produce a report of the status of the whole robot composite. 
+  - [x] implement a function that accept the log of the max chanrge from each part of the robot and that calculate the total cost to charge all the internal batteries of the robot composite; the cost for one Ah is £0.2.
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
 6. **Neck and head**
   - [x] add a neck and a head and connect them to the robot bus. 
-  - [x] update the the two dashboard reports accordingly
+  - [x] update the the two dashboard reports accordingly.
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip has itself an On/Off status, a max charge and accepts commands as well.
   - [x] connect the arm, the thigh, the lower limb and the foot to hip. Add indentation to the On/Off status report to visually represent the tree structure.
@@ -102,7 +102,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
 11. **Head parts**
   - [x] connect head to the neck. As before update report indentation and ensure correct commands transmission.
 12. **Head parts On/Off status format change**
-  - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
+  - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round. **Implement this change without modifying the dashboard and its functions.**
 
 ## Reflections points
 
