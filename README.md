@@ -106,8 +106,11 @@ The left arm accepts and executes a command in the form of a string. For the sha
 
 ## Post exercises reflections
 
-- xxx
-- xxx
-- xxx
+- **the composition design style** encapsulate the knowledge and navigation of the object graph into the composite objects. As result, when there are changes at object graph, as for feature requests #7 #8 #10 and #11, changes required are confined to the objects directly involved and do not escalate to the rest of the object graph or to the dashboard functions navigating the graph
+- **the inversion of the dependency** from the robot parts (the more unstable objects) to the dashboard (the more stable object) limits the impact of changes that don’t impact the dashboard object, as for feature request #12
+- **interfaces and adapter pattern** that abstract away differences between the robot parts, ,are it possible to compose objects in different ways, and make it easier to work with a collection of robot parts.
+
+
+
 
 The exercises are based on concepts covered by this post (there's no benefit in reading it before the exercise, read it after to connect the dots): http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
