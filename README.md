@@ -64,3 +64,7 @@ The goal of this exercise is to experience a different design that reduces the i
 - invert the dependencies from the dashboard functions (On/Off status report and total cost to re-charge all the internal batteries) to the robot parts so that the robot parts have a dependency to the dashboard and not the opposite;
 - use a common interface and if needed the adapter pattern to abstract away differences between different robot parts;
 - pass the dashboard to the robot parts as a visitor in the visitor pattern; let each robot part take care of passing the dashboard to the robot parts directly composed/connected so that the responsibility of navigating the object graph moves from the dashboard functions into each robot part that compose/connects another robot part(s).
+
+As for the previous exercise, the list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. You are encouraged to write unit tests. Every feature request should only take few minutes to implement. For every new feature request take notes of the difficulties you encountered because of the design.
+
+**The problem:** We want to model different parts of a robot, compose them in different ways as the robot evolve, and have some features carried out by the composite of robot parts.
