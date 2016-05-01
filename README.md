@@ -104,7 +104,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
 12. **Head parts On/Off status format change**
   - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round. **Implement this change without modifying the dashboard and its functions.**
 
-## Reflections points
+## Post exercises reflections
 
 - xxx
 - xxx
