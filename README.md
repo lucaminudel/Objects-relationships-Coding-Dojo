@@ -109,9 +109,9 @@ The left arm accepts and executes a command in the form of a string. For the sha
 - **The composition design style** used in the 2nd exercise, encapsulates the knowledge and navigation of the object graph into the composite objects. As result, when there are changes at object graph, as for feature requests #7 #8 #10 and #11, changes required are confined to the objects directly involved and do not escalate to the rest of the object graph or to the dashboard functions navigating the graph
 - **The inversion of the dependency** used in the 2nd exercise, from the unstable objects more likely to change (the robot parts) to the more stable objects (the dashboard) limits the impact of changes that don’t impact the dashboard object, as for feature request #12
 - **Interfaces and adapter pattern** used in the 2nd exercise, abstract away differences between the robot parts and so they make it possible to compose objects in different ways, and they make it easier to work with a collection of robot parts.
-- **
+- **Better encapsulation without property getters** that can be avoided in the 2nd exercise for the On/Off status, the max charge and the relatioship because the composite design style encapsulate the object relationships of the graph and the visitor pattern encapsulate the reporting responsibility, so that they don't need to be accessed by the external functions of the dashboard.
 
 
-This post shows in a very clear and visual way the concept of programming by composition that is used the 2nd exercise.
+This post shows in a very clear and visual way the concept of programming by composition that is used the 2nd exercise: http://blog.davidpeterson.co.uk/2011/01/object-oriented-example.html
 
 The key concept of the exercises are based on this post that should help you to connect the dots, and explain way the design of the 2nd exercise made it easier for you to implement some of the feature changes: http://blogs.ugidotnet.org/luKa/archive/2015/01/20/overcoming-the-one-weakness-of-oop.aspx
