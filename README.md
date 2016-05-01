@@ -59,4 +59,8 @@ The left arm accepts and executes a command in the form of a string. For the sha
 
 ## Exercise 2. Target design
 
-...
+
+The goal of this exercise is to experience a different design that reduces the impact of changes to objects in the object graph and of changes to the object graph itself. In order to use a different design,
+- invert the dependencies from the dashboard functions (On/Off status report and total cost to re-charge all the internal batteries) to the robot parts so that the robot parts have a dependency to the dashboard and not the opposite;
+- use a common interface and if needed the adapter pattern to abstract away differences between different robot parts;
+- pass the dashboard to the robot parts as a visitor in the visitor pattern; let each robot part take care of passing the dashboard to the robot parts directly composed/connected so that the responsibility of navigating the object graph moves from the dashboard functions into each robot part that compose/connects another robot part(s).
