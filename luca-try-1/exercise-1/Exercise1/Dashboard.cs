@@ -22,6 +22,8 @@ namespace Exercise1
             report.AppendFormat("  Right thigh is: {0}\n", IsOnToString(_robotBus.RightThigh.IsOn));
             report.AppendFormat("  Neck is: {0}\n", IsOnToString(_robotBus.Neck.IsOn));
             report.AppendFormat("  Head is: {0}\n", IsOnToString(_robotBus.Head.IsOn));
+            report.AppendFormat("  Right lower limb is: {0}\n", IsOnToString(_robotBus.RightLowerLimb.IsOn));
+            report.AppendFormat("  Right foot is: {0}\n", IsOnToString(_robotBus.RightFoot.IsOn));
 
             return report.ToString();
         }
@@ -32,8 +34,10 @@ namespace Exercise1
                 + _robotBus.RightThigh.MaxCharge 
                 + _robotBus.Neck.MaxCharge
                 + _robotBus.Head.MaxCharge
+                + _robotBus.RightLowerLimb.MaxCharge
+                + _robotBus.RightFoot.MaxCharge
                 ) * 0.2 / 1000;
-        }
+        } 
         
         private static string IsOnToString(Boolean isOn)
         {

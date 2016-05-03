@@ -25,7 +25,9 @@ namespace Exercise1.Tests
                 "  Left arm is: On", 
                 "  Right thigh is: On",
                 "  Neck is: Off", 
-                "  Head is: Off", ""
+                "  Head is: Off", 
+                "  Right lower limb is: On",
+                "  Right foot is: On", ""
             };
 
             Assert.AreEqual(string.Join("\n", reportItems), _target.OnOffReport());
@@ -34,7 +36,7 @@ namespace Exercise1.Tests
         [Test]
         public void recharge_costs_report_for_the_all_parts()
         {
-            Assert.AreEqual(0.96, _target.RechargeCostsReport());
+            Assert.AreEqual(1.24, _target.RechargeCostsReport());
         }
 
 

@@ -46,6 +46,10 @@
     <Compile Include="Head.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="Neck.cs" />
+    <Compile Include="RightFoot.cs" />
+    <Compile Include="RightLowerLimb.cs" />
+    <Compile Include="Tests\RightFootTest.cs" />
+    <Compile Include="Tests\RightLowerLimbTest.cs" />
     <Compile Include="RightThigh.cs" />
     <Compile Include="RobotBus.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
