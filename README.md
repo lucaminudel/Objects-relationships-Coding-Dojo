@@ -38,7 +38,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] update the the two dashboard reports accordingly.
 6. **Neck and head**
   - [x] add a neck and a head and connect them to the robot bus. 
-  - [x] update the the two dashboard reports accordingly.
+  - [x] update the two dashboard reports accordingly.
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip has itself an On/Off status, a max charge and accepts commands as well.
   - [x] connect the arm, the thigh, the lower limb and the foot to hip. Add indentation to the On/Off status report to visually represent the tree structure.
@@ -88,7 +88,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] update the the two dashboard reports accordingly.
 6. **Neck and head**
   - [x] add a neck and a head and connect them to the robot bus. 
-  - [x] update the the two dashboard reports accordingly.
+  - [x] update the two dashboard reports accordingly.
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip has itself an On/Off status, a max charge and accepts commands as well.
   - [x] connect the arm, the thigh, the lower limb and the foot to hip. Add indentation to the On/Off status report to visually represent the tree structure.
