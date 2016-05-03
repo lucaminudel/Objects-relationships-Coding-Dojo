@@ -7,10 +7,14 @@ namespace Exercise1
         private readonly Log _log;
         private readonly LeftArm _leftArm;
         private readonly RightThigh _rightThigh;
+        private readonly Neck _neck;
+        private readonly Head _head;
 
         public bool IsOn { get { return true; } }
         public LeftArm LeftArm { get { return _leftArm;  } }
         public RightThigh RightThigh { get { return _rightThigh; } }
+        public Neck Neck { get { return _neck; } }
+        public Head Head { get { return _head; } }
 
         public RobotBus() : this(new Log()) { }
 
@@ -19,6 +23,8 @@ namespace Exercise1
             _log = log;
             _leftArm = new LeftArm(log);
             _rightThigh = new RightThigh(log);
+            _neck = new Neck(log);
+            _head = new Head(log);
         }
 
         public void Execute(string command)
@@ -30,6 +36,8 @@ namespace Exercise1
 
             _leftArm.Execute(command);
             _rightThigh.Execute(command);
+            _neck.Execute(command);
+            _head.Execute(command);
         }
     }
 }

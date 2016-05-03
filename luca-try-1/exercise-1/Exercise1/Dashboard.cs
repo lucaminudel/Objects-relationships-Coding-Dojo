@@ -20,13 +20,19 @@ namespace Exercise1
             report.AppendFormat("Robot bus is: {0}\n", IsOnToString(_robotBus.IsOn));
             report.AppendFormat("  Left arm is: {0}\n", IsOnToString(_robotBus.LeftArm.IsOn));
             report.AppendFormat("  Right thigh is: {0}\n", IsOnToString(_robotBus.RightThigh.IsOn));
+            report.AppendFormat("  Neck is: {0}\n", IsOnToString(_robotBus.Neck.IsOn));
+            report.AppendFormat("  Head is: {0}\n", IsOnToString(_robotBus.Head.IsOn));
 
             return report.ToString();
         }
 
         public double RechargeCostsReport()
         {
-            return (_robotBus.LeftArm.MaxCharge + _robotBus.RightThigh.MaxCharge)*0.2/1000;
+            return (_robotBus.LeftArm.MaxCharge 
+                + _robotBus.RightThigh.MaxCharge 
+                + _robotBus.Neck.MaxCharge
+                + _robotBus.Head.MaxCharge
+                ) * 0.2 / 1000;
         }
         
         private static string IsOnToString(Boolean isOn)

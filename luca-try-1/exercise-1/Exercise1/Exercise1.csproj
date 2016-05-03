@@ -43,12 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dashboard.cs" />
+    <Compile Include="Head.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="Neck.cs" />
     <Compile Include="RightThigh.cs" />
     <Compile Include="RobotBus.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
+    <Compile Include="Tests\HeadTest.cs" />
     <Compile Include="Tests\LeftArmTest.cs" />
+    <Compile Include="Tests\NeckTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\RobotBusTest.cs" />
   </ItemGroup>

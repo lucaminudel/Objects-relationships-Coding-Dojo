@@ -32,7 +32,9 @@ namespace Exercise1.Tests
             {
                 "Robot bus status is ok", 
                 "Left arm status is ok", 
-                "RightThigh status is ok", ""
+                "RightThigh status is ok", 
+                "Neck status is ok",
+                "Head status is ok", ""
             };
             Assert.AreEqual(string.Join(".\n", reportItems), log.Read());
         }

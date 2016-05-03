@@ -23,7 +23,9 @@ namespace Exercise1.Tests
             {
                 "Robot bus is: On", 
                 "  Left arm is: On", 
-                "  Right thigh is: On", ""
+                "  Right thigh is: On",
+                "  Neck is: Off", 
+                "  Head is: Off", ""
             };
 
             Assert.AreEqual(string.Join("\n", reportItems), _target.OnOffReport());
@@ -32,7 +34,7 @@ namespace Exercise1.Tests
         [Test]
         public void recharge_costs_report_for_the_all_parts()
         {
-            Assert.AreEqual(0.66, _target.RechargeCostsReport());
+            Assert.AreEqual(0.96, _target.RechargeCostsReport());
         }
 
 
