@@ -4,8 +4,9 @@ namespace Exercise1
 {
     public class RobotBus
     {
-        private Log _log;
-        private LeftArm _leftArm;
+        private readonly Log _log;
+        private readonly LeftArm _leftArm;
+        private readonly RightThigh _rightThigh;
 
         public RobotBus() : this(new Log()) {}
 
@@ -13,6 +14,7 @@ namespace Exercise1
         {
             _log = log;
             _leftArm = new LeftArm(log);
+            _rightThigh = new RightThigh(log);
         }
 
         public bool IsOn { get { return true;  } }
@@ -25,6 +27,7 @@ namespace Exercise1
             }
 
             _leftArm.Execute(command);
+            _rightThigh.Execute(command);
         }
     }
 }

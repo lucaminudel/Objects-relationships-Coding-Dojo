@@ -44,8 +44,10 @@
   <ItemGroup>
     <Compile Include="LeftArm.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="RightThigh.cs" />
     <Compile Include="RobotBus.cs" />
     <Compile Include="Tests\LeftArmTest.cs" />
+    <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\RobotBusTest.cs" />
   </ItemGroup>
   <ItemGroup>

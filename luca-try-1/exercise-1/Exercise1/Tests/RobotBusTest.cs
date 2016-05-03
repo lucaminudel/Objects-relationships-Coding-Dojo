@@ -28,7 +28,7 @@ namespace Exercise1.Tests
 
             target.Execute("check");
 
-            Assert.AreEqual("Robot bus status is ok.\nLeft arm status is ok.\n", log.Read());
+            Assert.AreEqual("Robot bus status is ok.\nLeft arm status is ok.\nRightThigh status is ok.\n", log.Read());
         }
 
         [Test]
