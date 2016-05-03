@@ -39,5 +39,14 @@ namespace Exercise1.Tests
 
             Assert.AreEqual("Left arm status is ok.\n", _log.Read());
         }
+
+
+        [Test]
+        public void non_check_command_return_empty_message()
+        {
+            _targetWithLog.Execute("any");
+
+            Assert.IsEmpty(_log.Read());
+        }
     }
 }
