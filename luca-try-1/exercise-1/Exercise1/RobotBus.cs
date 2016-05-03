@@ -4,7 +4,6 @@ namespace Exercise1
 {
     public class RobotBus
     {
-        private readonly Log _log;
         private readonly LeftArm _leftArm;
         private readonly RightThigh _rightThigh;
         private readonly Neck _neck;
@@ -16,28 +15,16 @@ namespace Exercise1
         public Neck Neck { get { return _neck; } }
         public Head Head { get { return _head; } }
 
-        public RobotBus() : this(new Log()) { }
-
-        public RobotBus(Log log)
+        public RobotBus()
         {
-            _log = log;
-            _leftArm = new LeftArm(log);
-            _rightThigh = new RightThigh(log);
-            _neck = new Neck(log);
-            _head = new Head(log);
+            _leftArm = new LeftArm();
+            _rightThigh = new RightThigh();
+            _neck = new Neck();
+            _head = new Head();
         }
 
-        public void Execute(string command)
-        {
-            if (command.Trim().ToLower() == "check")
-            {
-                _log.Append("Robot bus status is ok.");
-            }
+        // Other RobotBus respnonsibilities omitted because implementation is not needed for the exercise
+        // ...
 
-            _leftArm.Execute(command);
-            _rightThigh.Execute(command);
-            _neck.Execute(command);
-            _head.Execute(command);
-        }
     }
 }
