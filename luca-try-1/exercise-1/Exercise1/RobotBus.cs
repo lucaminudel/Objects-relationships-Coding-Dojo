@@ -10,6 +10,7 @@ namespace Exercise1
         private readonly Head _head;
         private readonly RightLowerLimb _rightLowerLimb;
         private readonly RightFoot _rightFoot;
+        private readonly Hip _hip;
 
         public bool IsOn { get { return true; } }
         public LeftArm LeftArm { get { return _leftArm;  } }
@@ -18,6 +19,7 @@ namespace Exercise1
         public Head Head { get { return _head; } }
         public RightLowerLimb RightLowerLimb { get { return _rightLowerLimb;  } }
         public RightFoot RightFoot { get { return _rightFoot; } }
+        public Hip Hip { get { return _hip; } }
 
         public RobotBus()
         {
@@ -27,6 +29,7 @@ namespace Exercise1
             _head = new Head();
             _rightLowerLimb = new RightLowerLimb();
             _rightFoot = new RightFoot();
+            _hip = new Hip();
         }
 
         // Other RobotBus respnonsibilities omitted because implementation is not needed for the exercise

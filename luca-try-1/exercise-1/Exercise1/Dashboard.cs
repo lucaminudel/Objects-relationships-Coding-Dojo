@@ -24,6 +24,7 @@ namespace Exercise1
             report.AppendFormat("  Head is: {0}\n", IsOnToString(_robotBus.Head.IsOn));
             report.AppendFormat("  Right lower limb is: {0}\n", IsOnToString(_robotBus.RightLowerLimb.IsOn));
             report.AppendFormat("  Right foot is: {0}\n", IsOnToString(_robotBus.RightFoot.IsOn));
+            report.AppendFormat("  Hip is: {0}\n", IsOnToString(_robotBus.Hip.IsOn));
 
             return report.ToString();
         }
@@ -36,6 +37,7 @@ namespace Exercise1
                 + _robotBus.Head.MaxCharge
                 + _robotBus.RightLowerLimb.MaxCharge
                 + _robotBus.RightFoot.MaxCharge
+                + _robotBus.Hip.MaxCharge
                 ) * 0.2 / 1000;
         } 
         
