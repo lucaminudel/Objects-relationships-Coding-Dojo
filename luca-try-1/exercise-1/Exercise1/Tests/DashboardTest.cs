@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Linq;
+using NUnit.Framework;
 
 namespace Exercise1.Tests
 {
@@ -18,7 +19,14 @@ namespace Exercise1.Tests
         [Test]
         public void onoff_report_for_the_all_parts()
         {
-            Assert.AreEqual("Robot bus is: On\n  Left arm is: On\n  Right thigh is: On\n", _target.OnOffReport());
+            var reportItems = new[]
+            {
+                "Robot bus is: On", 
+                "  Left arm is: On", 
+                "  Right thigh is: On", ""
+            };
+
+            Assert.AreEqual(string.Join("\n", reportItems), _target.OnOffReport());
         }
 
         [Test]

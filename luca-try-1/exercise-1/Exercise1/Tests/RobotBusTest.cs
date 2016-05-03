@@ -28,7 +28,13 @@ namespace Exercise1.Tests
 
             target.Execute("check");
 
-            Assert.AreEqual("Robot bus status is ok.\nLeft arm status is ok.\nRightThigh status is ok.\n", log.Read());
+            var reportItems = new[]
+            {
+                "Robot bus status is ok", 
+                "Left arm status is ok", 
+                "RightThigh status is ok", ""
+            };
+            Assert.AreEqual(string.Join(".\n", reportItems), log.Read());
         }
 
         [Test]
