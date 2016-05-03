@@ -32,7 +32,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
   - [x] implement a function that navigates the object graph from robot bus and reports the On/Off status of all robot parts, including the robot bus itself, with one line per part and with identation to visualise the tree structure.
-  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per one Ah is £0.2.
+  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per 1000 Ah is £0.2.
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
@@ -82,7 +82,7 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
   - [x] implement a function that navigates the object graph from robot bus and reports the On/Off status of all robot parts, including the robot bus itself, with one line per part and with identation to visualise the tree structure.
-  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per one Ah is £0.2
+  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per 1000 Ah is £0.2
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
