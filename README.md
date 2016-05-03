@@ -37,19 +37,27 @@ The list below contains all the feature requests to be implemented. Implement on
 5. **Right lower limbt**
   - [x] add a right lower limb and connect it to the robot bus. They also have the On/Off status, and a max charge.
   - [x] update the the two dashboard reports accordingly.
+  - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 6. **Neck and head**
   - [x] add a neck and a head with On/Off status and max charge, and connect them to the robot bus. 
   - [x] update the two dashboard reports accordingly.
+  - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip itself has On/Off status and max charge.
   - [x] connect the thigh, the lower limb and the foot to the hip. Update On/Off status report and add indentation to visually represent the tree structure.
+  - [ ] take notes of the classes that had to change. What do you think of this coupling? 
+  - [ ] have you noticed the appearance of method call chains (aka train wreck)?
 8. **Shoulders**
   - [x] add a shoulders part and connect it to the robot bus. Shoulders part has On/Off status and max charge.
   - [x] connect the neck and the head to shoulders part. Use again indentation in the updated On/Off status report. 
+  - [ ] take again notes of the classes that had to change. What do you think of this coupling? 
+  - [ ] have you noticed the appearance of more method call chains?
 9. **Trunk**
   - [x] rename robot bus to trunk.
 10. **Right leg parts**
   - [x] connect right lower limb to the right thigh and the right foot to the right lower limb. Ensure report indentation reflects the new structure.
+  - [ ] take again notes of the classes that had to change.
+  - [ ] more method call chains?
 11. **Head parts**
   - [x] connect head to the neck. As before update report indentation.
 12. **Head parts On/Off status format change**
