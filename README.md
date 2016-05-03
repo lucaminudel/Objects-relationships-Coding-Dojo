@@ -31,8 +31,8 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] the right thigh is connected to the robot bus from which can receive commands.
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
-  - [x] implement a function that reports the On/Off status of each part the robot as a report with with line per part that include the part name and the status.
-  - [x] implement a function that calculate the total cost to charge all the internal batteries; the cost for one Ah is £0.2.
+  - [x] implement a function that navigates the object graph from robot bus and reports the On/Off status of all robot parts, including the robot bus itself, with one line per part and with identation to visualise the tree structure.
+  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per one Ah is £0.2.
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
@@ -81,8 +81,8 @@ The left arm accepts and executes a command in the form of a string. For the sha
   - [x] the right thigh is connected to the robot bus from which can receive commands.
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
 4. **Dashboard**
-  - [x] implement a function that accept a log of the On/Off status from each part the robot and produce a report of the status of the whole robot composite. 
-  - [x] implement a function that accept the log of the max charge from each part of the robot and that calculate the total cost to charge all the internal batteries of the robot composite; the cost for one Ah is £0.2.
+  - [x] implement a function that navigates the object graph from robot bus and reports the On/Off status of all robot parts, including the robot bus itself, with one line per part and with identation to visualise the tree structure.
+  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per one Ah is £0.2
 5. **Right lower limb and right foot**
   - [x] add a right lower limb and a right foot and connect them to the robot bus. 
   - [x] update the the two dashboard reports accordingly.
