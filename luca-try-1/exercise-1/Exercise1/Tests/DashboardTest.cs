@@ -23,12 +23,12 @@ namespace Exercise1.Tests
             {
                 "Robot bus is: On", 
                 "  Left arm is: On", 
-                "  Right thigh is: On",
                 "  Neck is: Off", 
                 "  Head is: Off", 
-                "  Right lower limb is: On",
-                "  Right foot is: On", 
-                "  Hip is: On", ""
+                "  Hip is: On", 
+                "    Right thigh is: On",
+                "    Right lower limb is: On",
+                "    Right foot is: On", ""
             };
 
             Assert.AreEqual(string.Join("\n", reportItems), _target.OnOffReport());
