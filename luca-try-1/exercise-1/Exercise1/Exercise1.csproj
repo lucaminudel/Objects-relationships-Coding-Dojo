@@ -45,7 +45,6 @@
     <Compile Include="Dashboard.cs" />
     <Compile Include="Head.cs" />
     <Compile Include="Hip.cs" />
-    <Compile Include="LeftArm.cs" />
     <Compile Include="Neck.cs" />
     <Compile Include="RightFoot.cs" />
     <Compile Include="RightLowerLimb.cs" />
@@ -56,7 +55,6 @@
     <Compile Include="RobotBus.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
     <Compile Include="Tests\HeadTest.cs" />
-    <Compile Include="Tests\LeftArmTest.cs" />
     <Compile Include="Tests\NeckTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\RobotBusTest.cs" />

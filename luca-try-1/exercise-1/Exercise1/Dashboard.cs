@@ -18,7 +18,6 @@ namespace Exercise1
             var report = new StringBuilder();
 
             report.AppendFormat("Robot bus is: {0}\n", IsOnToString(_robotBus.IsOn));
-            report.AppendFormat("  Left arm is: {0}\n", IsOnToString(_robotBus.LeftArm.IsOn));
             report.AppendFormat("  Neck is: {0}\n", IsOnToString(_robotBus.Neck.IsOn));
             report.AppendFormat("  Head is: {0}\n", IsOnToString(_robotBus.Head.IsOn));
             report.AppendFormat("  Hip is: {0}\n", IsOnToString(_robotBus.Hip.IsOn));
@@ -31,8 +30,7 @@ namespace Exercise1
 
         public double RechargeCostsReport()
         {
-            return (_robotBus.LeftArm.MaxCharge 
-                + _robotBus.Neck.MaxCharge
+            return (_robotBus.Neck.MaxCharge
                 + _robotBus.Head.MaxCharge
                 + _robotBus.Hip.MaxCharge
                 + _robotBus.Hip.RightThigh.MaxCharge
