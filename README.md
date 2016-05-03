@@ -22,7 +22,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] Implement a robot right foot. 
   - [x] The right foot also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
   - [x] Finally the right foot also has a current On/Off switch status.
-  - [ ] FYI right foot and each other robot parts can execute commands specific to that part, their implementation is not requested as part of this exercise.
+  - [ ] FYI right foot and each other robot parts impements commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered.
   - [x] it has an On/Off status like the left arm.
