@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="RightThigh.cs" />
     <Compile Include="RobotBus.cs" />
+    <Compile Include="Tests\DashboardTest.cs" />
     <Compile Include="Tests\LeftArmTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\RobotBusTest.cs" />

@@ -8,7 +8,11 @@ namespace Exercise1
         private readonly LeftArm _leftArm;
         private readonly RightThigh _rightThigh;
 
-        public RobotBus() : this(new Log()) {}
+        public bool IsOn { get { return true; } }
+        public LeftArm LeftArm { get { return _leftArm;  } }
+        public RightThigh RightThigh { get { return _rightThigh; } }
+
+        public RobotBus() : this(new Log()) { }
 
         public RobotBus(Log log)
         {
@@ -16,8 +20,6 @@ namespace Exercise1
             _leftArm = new LeftArm(log);
             _rightThigh = new RightThigh(log);
         }
-
-        public bool IsOn { get { return true;  } }
 
         public void Execute(string command)
         {
