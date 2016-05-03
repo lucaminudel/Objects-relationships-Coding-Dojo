@@ -20,13 +20,14 @@ The list below contains all the feature requests to be implemented. Implement on
 
 1. **Left arm**
   - [x] Implement a robot left arm. 
-The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it's sufficient to implement just the "check" diagnostic command that writes, to the output console or to a log, the status of the arm in the form of this message: "Left arm status is ok."
   - [x] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
   - [x] Finally the left arm also has a current On/Off switch status.
+  - [ ] FYI arm and each other robot parts can execute commands specific to that part, they exists but are not implemented as part of this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered.
   - [x] it has an On/Off status like the left arm.
-  - [x] the left arm is connected to the robot bus and when the robot bus receive a command, the command is sent to the left arm.
+  - [x] the left arm is connected to the robot bus.
+  - [ ] FYI When the robot bus receive a command, the command is sent to the left arm and the other parts connected. This  is not implemented as part of this exercise.
 3. **Right thigh**
   - [x] the right thigh is connected to the robot bus from which can receive commands.
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
@@ -70,13 +71,14 @@ As for the previous exercise, the list below contains all the feature requests t
 
 1. **Left arm**
   - [x] Implement a robot left arm. 
-The left arm accepts and executes a command in the form of a string. For the shake of this exercise, it's sufficient to implement just the "check" diagnostic command that writes, to the output console or to a log, the status of the arm in the form of this message: "Left arm status is ok."
   - [x] The left arm also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. **No need to expose this a public getter.**
   - [x] Finally the left arm also has a current On/Off switch status. **No need to expose this a public getter.**
+  - [ ] FYI arm and each other robot parts can execute commands specific to that part, they exists but are not implemented as part of this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered.
   - [x] it has an On/Off status like the left arm.
-  - [x] the left arm is connected to the robot bus and when the robot bus receive a command, the command is sent to the left arm.
+  - [x] the left arm is connected to the robot bus.
+  - [ ] FYI When the robot bus receive a command, the command is sent to the left arm and the other parts connected. This  is not implemented as part of this exercise.
 3. **Right thigh**
   - [x] the right thigh is connected to the robot bus from which can receive commands.
   - [x] like the left arm it has an On/Off switch status and the max charge of the internal battery.
