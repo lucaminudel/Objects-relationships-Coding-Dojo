@@ -33,7 +33,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] the right thigh is connected to the robot bus.
 4. **Dashboard**
   - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
-  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to charge all the internal batteries; the cost per 1000 Ah is £0.2.
+  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
 5. **Right lower limbt**
   - [x] add a right lower limb and connect it to the robot bus. They also have the On/Off status, and a max charge.
   - [x] update the the two dashboard reports accordingly.
