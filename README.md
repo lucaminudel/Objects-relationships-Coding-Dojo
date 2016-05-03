@@ -60,9 +60,11 @@ The list below contains all the feature requests to be implemented. Implement on
   - [ ] more method call chains?
 11. **Head parts**
   - [x] connect head to the neck. As before update report indentation.
+  - [ ] same classes had to change?
+  - [ ] more method call chains?
 12. **Head parts On/Off status format change**
   - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
-
+  - [ ] take again notes of the classes that had to change. What do you think of this other coupling? 
 
 
 ## Exercise 2. Target design
