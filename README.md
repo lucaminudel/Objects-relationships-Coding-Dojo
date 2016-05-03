@@ -24,10 +24,10 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] Finally the right foot also has a current On/Off switch status.
   - [ ] FYI right foot and each other robot parts impements commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
-  - [x] the robot bus is electricity powered.
-  - [x] it has an On/Off status like the left arm.
-  - [x] the right thigh  is connected to the robot bus.
-  - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is omitted in this exercise.
+  - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
+  - [x] it has an On/Off status like the right foot.
+  - [x] the right foot is connected to the robot bus.
+  - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
 3. **Right thigh**
   - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
   - [x] the right thigh is connected to the robot bus.
