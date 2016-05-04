@@ -7,12 +7,12 @@ namespace Exercise1.Tests
     [TestFixture]
     public class ShouldersTest
     {
-        private Shoulders _target;
+        private Shoulder _target;
 
         [SetUp]
         public void SetUp()
         {
-            _target = new Shoulders();
+            _target = new Shoulder();
 
         }
 

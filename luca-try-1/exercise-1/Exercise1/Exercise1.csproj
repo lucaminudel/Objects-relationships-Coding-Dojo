@@ -43,19 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dashboard.cs" />
-    <Compile Include="Head.cs" />
     <Compile Include="Hip.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="RightFoot.cs" />
     <Compile Include="RightLowerLimb.cs" />
-    <Compile Include="Shoulders.cs" />
+    <Compile Include="Shoulder.cs" />
     <Compile Include="Tests\HipTest.cs" />
     <Compile Include="Tests\RightFootTest.cs" />
     <Compile Include="Tests\RightLowerLimbTest.cs" />
     <Compile Include="RightThigh.cs" />
     <Compile Include="Trunk.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
-    <Compile Include="Tests\HeadTest.cs" />
     <Compile Include="Tests\LeftArmTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\TrunkTest.cs" />

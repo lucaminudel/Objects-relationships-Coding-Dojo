@@ -18,9 +18,8 @@ namespace Exercise1
             var report = new StringBuilder();
 
             report.AppendFormat("Trunk is: {0}\n", IsOnToString(_trunk.IsOn));
-            report.AppendFormat("  Shoulders is: {0}\n", IsOnToString(_trunk.Shoulders.IsOn));
-            report.AppendFormat("    Left arm is: {0}\n", IsOnToString(_trunk.Shoulders.LeftArm.IsOn));
-            report.AppendFormat("    Head is: {0}\n", IsOnToString(_trunk.Shoulders.Head.OnOffStatus == Head.OnOffStatusEnum.On));
+            report.AppendFormat("  Shoulder is: {0}\n", IsOnToString(_trunk.Shoulder.IsOn));
+            report.AppendFormat("    Left arm is: {0}\n", IsOnToString(_trunk.Shoulder.LeftArm.OnOffStatus == LeftArm.OnOffStatusEnum.On));
             report.AppendFormat("  Hip is: {0}\n", IsOnToString(_trunk.Hip.IsOn));
             report.AppendFormat("    Right thigh is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.IsOn));
             report.AppendFormat("      Right lower limb is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.RightLowerLimb.IsOn));
@@ -31,9 +30,8 @@ namespace Exercise1
 
         public double RechargeCostsReport()
         {
-            return (_trunk.Shoulders.MaxCharge
-                + _trunk.Shoulders.LeftArm.MaxCharge
-                + _trunk.Shoulders.Head.MaxCharge
+            return (_trunk.Shoulder.MaxCharge
+                + _trunk.Shoulder.LeftArm.MaxCharge
                 + _trunk.Hip.MaxCharge
                 + _trunk.Hip.RightThigh.MaxCharge
                 + _trunk.Hip.RightThigh.RightLowerLimb.MaxCharge
