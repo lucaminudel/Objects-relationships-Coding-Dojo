@@ -2,5 +2,6 @@
 {
     public interface IRobotPart
     {
+        void AcceptLogVisitor(Dashboard visitor);
     }
 }

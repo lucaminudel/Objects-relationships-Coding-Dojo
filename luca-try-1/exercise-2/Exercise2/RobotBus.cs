@@ -6,10 +6,19 @@ namespace Exercise2
         private readonly bool _isOn = true;
         private readonly IRobotPart[] _robotParts;
 
-        public RobotBus(IRobotPart[] robotParts)
+        public RobotBus(LeftArm leftArm, RightFoot rightFoot)
         {
-            _robotParts = (IRobotPart[])robotParts.Clone();
+            _robotParts = new IRobotPart[] {leftArm, rightFoot};
         }
 
+        public void AcceptLogVisitor(Dashboard visitor)
+        {
+            visitor.LogStatus("Robot bus", _isOn);
+
+            foreach (var robotPart in _robotParts)
+            {
+                robotPart.AcceptLogVisitor(visitor.VisitLeaf());
+            }
+        }
     }
 }

@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="Tests\DashboardTest.cs" />
     <Compile Include="IRobotPart.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="RightFoot.cs" />
