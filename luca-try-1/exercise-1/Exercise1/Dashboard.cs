@@ -20,7 +20,7 @@ namespace Exercise1
             report.AppendFormat("Trunk is: {0}\n", IsOnToString(_trunk.IsOn));
             report.AppendFormat("  Shoulders is: {0}\n", IsOnToString(_trunk.Shoulders.IsOn));
             report.AppendFormat("    Left arm is: {0}\n", IsOnToString(_trunk.Shoulders.LeftArm.IsOn));
-            report.AppendFormat("    Head is: {0}\n", IsOnToString(_trunk.Shoulders.Head.IsOn));
+            report.AppendFormat("    Head is: {0}\n", IsOnToString(_trunk.Shoulders.Head.OnOffStatus == Head.OnOffStatusEnum.On));
             report.AppendFormat("  Hip is: {0}\n", IsOnToString(_trunk.Hip.IsOn));
             report.AppendFormat("    Right thigh is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.IsOn));
             report.AppendFormat("      Right lower limb is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.RightLowerLimb.IsOn));

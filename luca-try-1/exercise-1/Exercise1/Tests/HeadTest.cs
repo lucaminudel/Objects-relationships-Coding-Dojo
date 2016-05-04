@@ -26,7 +26,7 @@ namespace Exercise1.Tests
         [Test]
         public void has_an_onoff_status()
         {
-            Assert.IsFalse(_target.IsOn);
+            Assert.IsFalse(_target.OnOffStatus == Head.OnOffStatusEnum.On);
         }
     }
 }
