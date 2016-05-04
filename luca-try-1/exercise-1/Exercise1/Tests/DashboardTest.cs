@@ -6,14 +6,14 @@ namespace Exercise1.Tests
     [TestFixture]
     public class DashboardTest
     {
-        RobotBus _robotBus;
+        Trunk _trunk;
         Dashboard _target;
 
         [SetUp]
         public void SetUp()
         {
-            _robotBus = new RobotBus();
-            _target = new Dashboard(_robotBus);           
+            _trunk = new Trunk();
+            _target = new Dashboard(_trunk);           
         }
 
         [Test]
@@ -21,7 +21,7 @@ namespace Exercise1.Tests
         {
             var reportItems = new[]
             {
-                "Robot bus is: On", 
+                "Trunk is: On", 
                 "  Shoulders is: On", 
                 "    Neck is: Off", 
                 "    Head is: Off", 

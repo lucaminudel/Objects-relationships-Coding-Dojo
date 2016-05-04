@@ -2,21 +2,21 @@
 
 namespace Exercise1
 {
-    public class RobotBus
+    public class Trunk
     {
         public bool IsOn { get { return true; } }
 
         public Hip Hip { get; private set; }
         public Shoulders Shoulders { get; private set; }
 
-        public RobotBus()
+        public Trunk()
         {
 
             Hip = new Hip();
             Shoulders = new Shoulders();
         }
 
-        // Other RobotBus respnonsibilities omitted because implementation is not needed for the exercise
+        // Other Trunk respnonsibilities omitted because implementation is not needed for the exercise
         // ...
 
     }

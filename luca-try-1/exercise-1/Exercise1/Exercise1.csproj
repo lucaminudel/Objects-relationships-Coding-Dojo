@@ -53,12 +53,12 @@
     <Compile Include="Tests\RightFootTest.cs" />
     <Compile Include="Tests\RightLowerLimbTest.cs" />
     <Compile Include="RightThigh.cs" />
-    <Compile Include="RobotBus.cs" />
+    <Compile Include="Trunk.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
     <Compile Include="Tests\HeadTest.cs" />
     <Compile Include="Tests\NeckTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
-    <Compile Include="Tests\RobotBusTest.cs" />
+    <Compile Include="Tests\TrunkTest.cs" />
     <Compile Include="Tests\ShouldersTest.cs" />
   </ItemGroup>
   <ItemGroup>
