@@ -51,7 +51,7 @@
     <Compile Include="IRobotPart.cs" />
     <Compile Include="LeftArm.cs" />
     <Compile Include="RightFoot.cs" />
-    <Compile Include="RobotBus.cs" />
+    <Compile Include="Trunk.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

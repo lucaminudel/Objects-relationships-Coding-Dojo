@@ -25,7 +25,7 @@ namespace Exercise2.Tests
         [Test]
         public void object_graph_report()
         {
-            var robotBus = new RobotBus(
+            var robotBus = new Trunk(
                 new Shoulder(new LeftArm()), 
                 new Hip(new RightFoot(), new RightThigh(), new RightLowerLimb()));
 
@@ -33,7 +33,7 @@ namespace Exercise2.Tests
 
             var reportItems = new[]
             {
-                "Robot bus is: On", 
+                "Trunk is: On", 
                 "  Shoulder is: On", 
                 "    Left arm is: Off", 
                 "  Hip is: On", 
