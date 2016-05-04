@@ -16,7 +16,7 @@ In order to keep the design simplistic,
 
 The list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. Every feature request should only take few minutes to implement.
 
-**The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and implement some features that act on all robot parts.
+**The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and implement some features that act on the whole object graph of robot parts.
 
 1. **Left arm**
   - [x] Implement a robot left arm. 
