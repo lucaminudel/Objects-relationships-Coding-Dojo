@@ -38,8 +38,8 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
   - [x] update the the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
-6. **Neck and head**
-  - [x] add a neck and a head with On/Off status and max charge, and connect them to the robot bus. 
+6. **Head**
+  - [x] add a head with On/Off status and max charge, and connect it to the robot bus. 
   - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 7. **Hip**
@@ -49,7 +49,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [ ] have you noticed the appearance of method call chains (aka train wreck)?
 8. **Shoulders**
   - [x] add a shoulders part and connect it to the robot bus. Shoulders part has On/Off status and max charge.
-  - [x] connect the neck and the head to shoulders part. Use again indentation in the updated On/Off status report. 
+  - [x] connect the left arm and the head to shoulders part. Use again indentation in the updated On/Off status report. 
   - [ ] take again notes of the classes that had to change. What do you think of this coupling? 
   - [ ] have you noticed the appearance of more method call chains?
 9. **Trunk**
@@ -59,7 +59,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [ ] take again notes of the classes that had to change.
   - [ ] more method call chains?
 11. **Head parts On/Off status format change**
-  - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
+  - [x] if you are using boolean as current representation, change it for the head to enum, constants or flags. Or the other way round.
   - [ ] take again notes of the classes that had to change. What do you think of this other coupling? 
 
 
@@ -99,8 +99,8 @@ As for the previous exercise, the list below contains all the feature requests t
   - [x] update the the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. Is it different from exercise 1? 
   - [ ] does the collection of robot parts help?
-6. **Neck and head**
-  - [x] add a neck and a head with On/Off status and max charge, and connect them to the robot bus. 
+6. **Head**
+  - [x] add a head with On/Off status and max charge, and connect it to the robot bus. 
   - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. Is it still different from exercise 1?  
 7. **Hip**
@@ -110,7 +110,7 @@ As for the previous exercise, the list below contains all the feature requests t
   - [ ] have you noticed any appearance of method call chains (aka train wreck) at all?
 8. **Shoulders**
   - [x] add a shoulders part and connect it to the robot bus. Shoulders part has On/Off status and max charge.
-  - [x] connect the neck and the head to shoulders part. Use again indentation in the updated On/Off status report. 
+  - [x] connect the left arm and the head to shoulders part. Use again indentation in the updated On/Off status report. 
   - [ ] take again notes of the classes that had to change. Which differences do you notice from exercise 1? 
   - [ ] any appearance of method call chains (aka train wreck) ?
 9. **Trunk**
@@ -120,7 +120,7 @@ As for the previous exercise, the list below contains all the feature requests t
   - [ ] notes again whic classes that had to change compared to exercise 1.
   - [ ] any method call chains?
 11. **Head parts On/Off status format change**
-  - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
+  - [x] if you are using boolean as current representation, change it for the head to enum, constants or flags. Or the other way round.
   - [ ] what classes that had to change compared to exercise 1? 
 
 ## Post exercises reflections
