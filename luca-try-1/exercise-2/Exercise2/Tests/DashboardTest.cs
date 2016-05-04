@@ -25,7 +25,9 @@ namespace Exercise2.Tests
         [Test]
         public void object_graph_report()
         {
-            var robotBus = new RobotBus(new LeftArm(), new RightFoot(), new RightThigh(), new RightLowerLimb());
+            var robotBus = new RobotBus(
+                new LeftArm(), 
+                new Hip(new RightFoot(), new RightThigh(), new RightLowerLimb()));
 
             robotBus.AcceptLogVisitor(_target);
 
@@ -33,13 +35,14 @@ namespace Exercise2.Tests
             {
                 "Robot bus is: On", 
                 "  Left arm is: Off", 
-                "  Right foot is: On", 
-                "  Right thigh is: On", 
-                "  Right lower limb is: On", ""
+                "  Hip is: On", 
+                "    Right foot is: On", 
+                "    Right thigh is: On", 
+                "    Right lower limb is: On", ""
             };
             Assert.AreEqual(string.Join("\n", reportItems), _target.GetStatusReport());
 
-            Assert.AreEqual(0.96, _target.GetRechargeCosts());
+            Assert.AreEqual(1.02, _target.GetRechargeCosts());
         }
     }
 }

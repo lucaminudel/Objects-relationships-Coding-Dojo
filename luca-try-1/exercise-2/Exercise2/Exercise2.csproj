@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dashboard.cs" />
+    <Compile Include="Hip.cs" />
     <Compile Include="RightLowerLimb.cs" />
     <Compile Include="RightThigh.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
