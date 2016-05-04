@@ -18,28 +18,28 @@ The list below contains all the feature requests to be implemented. Implement on
 
 **The problem:** We want to model different parts of a robot, connect them in different ways as the robot evolve, and implement some features that act on all robot parts.
 
-1. **Right foot**
-  - [x] Implement a robot right foot. 
-  - [x] The right foot also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
-  - [x] Finally the right foot also has a current On/Off switch status.
-  - [ ] FYI right foot and each other robot parts impements commands specific to that part, their implementation is omitted in this exercise.
+1. **Left arm**
+  - [x] Implement a robot left arm. 
+  - [x] The left arm has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
+  - [x] Finally the left arm also has a current On/Off switch status.
+  - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
   - [x] it has an On/Off status like the right foot.
-  - [x] the right foot is connected to the robot bus.
-  - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
-3. **Left arm**
-  - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
-  - [x] the left arm is connected to the robot bus too.
+  - [x] the left arm is connected to the robot bus.
+  - [ ] FYI When the robot bus receive a command, the command is sent to the left arm and every other robot parts connected to the bus. The commands transmission implementation is also omitted in this exercise.
+3. **Right foot**
+  - [x] like the left arm. it has an On/Off switch status and the max charge of the internal battery.
+  - [x] the right foot is connected to the robot bus too.
 4. **Dashboard**
   - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
   - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
-5. **Right thigh and right lower limb**
-  - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
+5. **Right thigh**
+  - [x] add a right thigh and connect it to the robot bus. It also has the On/Off status, and a max charge.
   - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
-6. **Head**
-  - [x] add a head with On/Off status and max charge, and connect it to the robot bus. 
+6. **Right lower limb**
+  - [x] add a right lower limb and connect it to the robot bus. It also has the On/Off status, and a max charge.
   - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 7. **Hip**
@@ -47,9 +47,9 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] connect the thigh, the lower limb and the foot to the hip. Update On/Off status report and add indentation to visually represent the tree structure.
   - [ ] take notes of the classes that had to change. What do you think of this coupling? 
   - [ ] have you noticed the appearance of method call chains (aka train wreck)?
-8. **Shoulders**
-  - [x] add a shoulders part and connect it to the robot bus. Shoulders part has On/Off status and max charge.
-  - [x] connect the left arm and the head to shoulders part. Use again indentation in the updated On/Off status report. 
+8. **Shoulder**
+  - [x] add a shoulder part and connect it to the robot bus. Shoulder part has On/Off status and max charge.
+  - [x] connect the left arm to shoulder part. Use again indentation in the updated On/Off status report. 
   - [ ] take again notes of the classes that had to change. What do you think of this coupling? 
   - [ ] have you noticed the appearance of more method call chains?
 9. **Trunk**
@@ -58,8 +58,8 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] connect right lower limb to the right thigh and the right foot to the right lower limb. Ensure report indentation reflects the new structure.
   - [ ] take again notes of the classes that had to change.
   - [ ] more method call chains?
-11. **Head parts On/Off status format change**
-  - [x] if you are using boolean as current representation, change it for the head to enum, constants or flags. Or the other way round.
+11. **Left arm part On/Off status format change**
+  - [x] if you are using boolean as current representation, change it for the left arm to enum, constants or flags. Or the other way round.
   - [ ] take again notes of the classes that had to change. What do you think of this other coupling? 
 
 
@@ -75,42 +75,43 @@ As for the previous exercise, the list below contains all the feature requests t
 
 **The problem:** We want to model different parts of a robot, compose them in different ways as the robot evolve, and have some features carried out by the composite of robot parts.
 
-1. **Right foot**
-  - [x] Implement a robot right foot. 
-  - [x] The right foot also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. No need to expose this as public getter.
-  - [x] Finally the right foot also has a current On/Off switch status. No need to expose this as public getter.
-  - [ ] FYI right foot and each other robot parts impements commands specific to that part, their implementation is omitted in this exercise.
+1. **Left arm**
+  - [x] Implement a robot left arm. 
+  - [x] The left arm has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. No need to expose this as public getter.
+  - [x] Finally the left arm also has a current On/Off switch status.  No need to expose this as public getter.
+  - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
   - [x] it has an On/Off status like the right foot.
-  - [x] the right foot is connected to the robot bus. No need to expose this as public getter. Use dependency injection in the robot bus constructor to get reference to the right foot. Continue to do the same for the other robot parts in the following step.
-  - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
-3. **Left arm**
-  - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
-  - [x] the left arm is connected to the robot bus too.
+  - [x] the left arm is connected to the robot bus. No need to expose this as public getter. Use dependency injection in the robot bus constructor to get reference to the left arm. Continue to do the same for the other robot parts in the following step.
+  - [ ] FYI When the robot bus receive a command, the command is sent to the left arm  and every other robot parts connected to the bus. The commands transmission implementation is also omitted in this exercise.
+3. **Right foot**
+  - [x] like the left arm. it has an On/Off switch status and the max charge of the internal battery.
+  - [x] the right foot is connected to the robot bus too.
   - [ ] you can introduce abstractions to abstract away differences between robot parts, and group them into a collaction of  uniform items.
 4. **Dashboard**
   - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
   - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
   - [ ] use the visitor pattern and pass around the dashboard object.
   - [ ] does the collection of robot parts help?
-5. **Right thigh and right lower limb**
-  - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
+5. **Right thigh**
+  - [x] add a right thigh and connect it to the robot bus. It also has the On/Off status, and a max charge.
   - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. Is it different from exercise 1? 
   - [ ] does the collection of robot parts help?
-6. **Head**
-  - [x] add a head with On/Off status and max charge, and connect it to the robot bus. 
+6. **Right lower limb**
+  - [x] add a right lower limb and connect it to the robot bus. It also has the On/Off status, and a max charge.
   - [x] update the two dashboard reports accordingly.
-  - [ ] take notes of the classes that had to change to add this part. Is it still different from exercise 1?  
+  - [ ] take notes of the classes that had to change to add this part. Is it different from exercise 1? 
+  - [ ] does the collection of robot parts help?
 7. **Hip**
   - [x] add a hip and connect it to the robot bus. Hip itself has On/Off status and max charge.
   - [x] connect the thigh, the lower limb and the foot to the hip. Update On/Off status report and add indentation to visually represent the tree structure.
   - [ ] take notes of the classes that had to change. Is it different from exercise 1? In which way?
   - [ ] have you noticed any appearance of method call chains (aka train wreck) at all?
-8. **Shoulders**
-  - [x] add a shoulders part and connect it to the robot bus. Shoulders part has On/Off status and max charge.
-  - [x] connect the left arm and the head to shoulders part. Use again indentation in the updated On/Off status report. 
+8. **Shoulder**
+  - [x] add a shoulder part and connect it to the robot bus. Shoulder part has On/Off status and max charge.
+  - [x] connect the left arm to shoulder part. Use again indentation in the updated On/Off status report. 
   - [ ] take again notes of the classes that had to change. Which differences do you notice from exercise 1? 
   - [ ] any appearance of method call chains (aka train wreck) ?
 9. **Trunk**
@@ -119,8 +120,8 @@ As for the previous exercise, the list below contains all the feature requests t
   - [x] connect right lower limb to the right thigh and the right foot to the right lower limb. Ensure report indentation reflects the new structure.
   - [ ] notes again whic classes that had to change compared to exercise 1.
   - [ ] any method call chains?
-11. **Head parts On/Off status format change**
-  - [x] if you are using boolean as current representation, change it for the head to enum, constants or flags. Or the other way round.
+11. **Left arm On/Off status format change**
+  - [x] if you are using boolean as current representation, change it for the left arm to enum, constants or flags. Or the other way round.
   - [ ] what classes that had to change compared to exercise 1? 
 
 ## Post exercises reflections
