@@ -6,9 +6,9 @@ namespace Exercise2
         private readonly bool _isOn = true;
         private readonly IRobotPart[] _robotParts;
 
-        public RobotBus(LeftArm leftArm, RightFoot rightFoot, RightThigh rightThigh)
+        public RobotBus(LeftArm leftArm, RightFoot rightFoot, RightThigh rightThigh, RightLowerLimb rightLowerLimb)
         {
-            _robotParts = new IRobotPart[] { leftArm, rightFoot, rightThigh };
+            _robotParts = new IRobotPart[] { leftArm, rightFoot, rightThigh, rightLowerLimb };
         }
 
         public void AcceptLogVisitor(Dashboard visitor)
@@ -20,5 +20,8 @@ namespace Exercise2
                 robotPart.AcceptLogVisitor(visitor.VisitLeaf());
             }
         }
+
+        // Other RobotBus respnonsibilities omitted because implementation is not needed for the exercise
+        // ...
     }
 }
