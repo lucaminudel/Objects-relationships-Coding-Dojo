@@ -22,8 +22,9 @@ namespace Exercise1.Tests
             var reportItems = new[]
             {
                 "Robot bus is: On", 
-                "  Neck is: Off", 
-                "  Head is: Off", 
+                "  Shoulders is: On", 
+                "    Neck is: Off", 
+                "    Head is: Off", 
                 "  Hip is: On", 
                 "    Right thigh is: On",
                 "    Right lower limb is: On",
@@ -36,7 +37,7 @@ namespace Exercise1.Tests
         [Test]
         public void recharge_costs_report_for_the_all_parts()
         {
-            Assert.AreEqual(0.88, _target.RechargeCostsReport());
+            Assert.AreEqual(0.94, _target.RechargeCostsReport());
         }
 
 

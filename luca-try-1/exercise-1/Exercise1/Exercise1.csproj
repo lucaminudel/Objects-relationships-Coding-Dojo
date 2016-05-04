@@ -48,6 +48,7 @@
     <Compile Include="Neck.cs" />
     <Compile Include="RightFoot.cs" />
     <Compile Include="RightLowerLimb.cs" />
+    <Compile Include="Shoulders.cs" />
     <Compile Include="Tests\HipTest.cs" />
     <Compile Include="Tests\RightFootTest.cs" />
     <Compile Include="Tests\RightLowerLimbTest.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Tests\NeckTest.cs" />
     <Compile Include="Tests\RightThighTest.cs" />
     <Compile Include="Tests\RobotBusTest.cs" />
+    <Compile Include="Tests\ShouldersTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
