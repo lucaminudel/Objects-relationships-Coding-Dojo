@@ -5,11 +5,11 @@ namespace Exercise2
     {
         private readonly int _maxCharge = 300;
         private readonly bool _isOn = true;
-        private readonly IRobotPart[] _robotParts;
+        private readonly RightThigh _rightThigh;
 
-        public Hip(RightFoot rightFoot, RightThigh rightThigh, RightLowerLimb rightLowerLimb)
+        public Hip(RightThigh rightThigh)
         {
-            _robotParts = new IRobotPart[] { rightFoot, rightThigh, rightLowerLimb };
+            _rightThigh = rightThigh;
         }
 
         public void AcceptLogVisitor(Dashboard visitor)
@@ -17,10 +17,7 @@ namespace Exercise2
             visitor.LogStatus("Hip", _isOn);
             visitor.LogMaxCharge(_maxCharge);
 
-            foreach (var robotPart in _robotParts)
-            {
-                robotPart.AcceptLogVisitor(visitor.VisitLeaf());
-            }
+            _rightThigh.AcceptLogVisitor(visitor.VisitLeaf());
         }
 
         // Other Hip respnonsibilities omitted because implementation is not needed for the exercise

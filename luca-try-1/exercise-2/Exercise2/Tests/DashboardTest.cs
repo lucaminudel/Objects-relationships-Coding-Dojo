@@ -27,7 +27,7 @@ namespace Exercise2.Tests
         {
             var robotBus = new Trunk(
                 new Shoulder(new LeftArm()), 
-                new Hip(new RightFoot(), new RightThigh(), new RightLowerLimb()));
+                new Hip(new RightThigh(new RightLowerLimb(new RightFoot()))));
 
             robotBus.AcceptLogVisitor(_target);
 
@@ -37,9 +37,9 @@ namespace Exercise2.Tests
                 "  Shoulder is: On", 
                 "    Left arm is: Off", 
                 "  Hip is: On", 
-                "    Right foot is: On", 
                 "    Right thigh is: On", 
-                "    Right lower limb is: On", ""
+                "      Right lower limb is: On", 
+                "        Right foot is: On", ""
             };
             Assert.AreEqual(string.Join("\n", reportItems), _target.GetStatusReport());
 
