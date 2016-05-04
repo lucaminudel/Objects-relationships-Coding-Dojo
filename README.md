@@ -28,14 +28,14 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] it has an On/Off status like the right foot.
   - [x] the right foot is connected to the robot bus.
   - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
-3. **Right thigh**
+3. **Left arm**
   - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
-  - [x] the right thigh is connected to the robot bus.
+  - [x] the left arm is connected to the robot bus too.
 4. **Dashboard**
   - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
   - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
-5. **Right lower limb**
-  - [x] add a right lower limb and connect it to the robot bus. They also have the On/Off status, and a max charge.
+5. **Right thigh and right lower limb**
+  - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
   - [x] update the the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 6. **Neck and head**
@@ -58,11 +58,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] connect right lower limb to the right thigh and the right foot to the right lower limb. Ensure report indentation reflects the new structure.
   - [ ] take again notes of the classes that had to change.
   - [ ] more method call chains?
-11. **Head parts**
-  - [x] connect head to the neck. As before update report indentation.
-  - [ ] same classes had to change?
-  - [ ] more method call chains?
-12. **Head parts On/Off status format change**
+11. **Head parts On/Off status format change**
   - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
   - [ ] take again notes of the classes that had to change. What do you think of this other coupling? 
 
@@ -89,17 +85,17 @@ As for the previous exercise, the list below contains all the feature requests t
   - [x] it has an On/Off status like the right foot.
   - [x] the right foot is connected to the robot bus. Use dependency injection in the robot bus constructor to get reference to the right foot. Continue to do the same for the other robot parts in the following step.
   - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
-3. **Right thigh**
+3. **Left arm**
   - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
-  - [x] the right thigh is connected to the robot bus.
+  - [x] the left arm is connected to the robot bus too.
   - [ ] you can introduce abstractions to abstract away differences between robot parts, and group them into a collaction of  uniform items.
 4. **Dashboard**
   - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
   - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
   - [ ] use the visitor pattern and pass around the dashboard object.
   - [ ] does the collection of robot parts help?
-5. **Right lower limb**
-  - [x] add a right lower limb and connect it to the robot bus. They also have the On/Off status, and a max charge.
+5. **Right thigh and right lower limb**
+  - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
   - [x] update the the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. Is it different from exercise 1? 
   - [ ] does the collection of robot parts help?
@@ -123,18 +119,14 @@ As for the previous exercise, the list below contains all the feature requests t
   - [x] connect right lower limb to the right thigh and the right foot to the right lower limb. Ensure report indentation reflects the new structure.
   - [ ] notes again whic classes that had to change compared to exercise 1.
   - [ ] any method call chains?
-11. **Head parts**
-  - [x] connect head to the neck. As before update report indentation.
-  - [ ] same classes had to change?
-  - [ ] still no call chains?
-12. **Head parts On/Off status format change**
+11. **Head parts On/Off status format change**
   - [x] if you are using boolean as current representation, change it for the neck and the head to enum, constants or flags. Or the other way round.
   - [ ] what classes that had to change compared to exercise 1? 
 
 ## Post exercises reflections
 
-- **The composition design style** used in the 2nd exercise, encapsulates the knowledge and navigation of the object graph into the composite objects. As result, when there are changes at object graph, as for feature requests #7 #8 #10 and #11, changes required are confined to the objects directly involved and do not escalate to the rest of the object graph or to the dashboard functions navigating the graph
-- **The inversion of the dependency** used in the 2nd exercise, from the unstable objects more likely to change (the robot parts) to the more stable objects (the dashboard) limits the impact of changes that don’t impact the dashboard object, as for feature request #12
+- **The composition design style** used in the 2nd exercise, encapsulates the knowledge and navigation of the object graph into the composite objects. As result, when there are changes at object graph, as for feature requests #7 #8 and #10, changes required are confined to the objects directly involved and do not escalate to the rest of the object graph or to the dashboard functions navigating the graph
+- **The inversion of the dependency** used in the 2nd exercise, from the unstable objects more likely to change (the robot parts) to the more stable objects (the dashboard) limits the impact of changes that don’t impact the dashboard object, as for feature request #11
 - **Interfaces and adapter pattern** used in the 2nd exercise, abstract away differences between the robot parts and so they make it possible to compose objects in different ways, and they make it easier to work with a collection of robot parts.
 - **Better encapsulation without property getters** that can be avoided in the 2nd exercise for the On/Off status, the max charge and the relationship because the composite design style encapsulate the object relationships of the graph and the visitor pattern encapsulate the reporting responsibility, so that they don't need to be accessed by the external functions of the dashboard.
 
