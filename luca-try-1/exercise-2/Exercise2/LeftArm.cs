@@ -11,5 +11,8 @@ namespace Exercise2
             visitor.LogStatus("Left arm", _isOn);
             visitor.LogMaxCharge(_maxCharge);
         }
+
+        // Other LeftArm respnonsibilities omitted because implementation is not needed for the exercise
+        // ...
     }
 }

@@ -11,5 +11,8 @@ namespace Exercise2
             visitor.LogStatus("Right foot", _isOn);
             visitor.LogMaxCharge(_maxCharge);
         }
+
+        // Other RightFoot respnonsibilities omitted because implementation is not needed for the exercise
+        // ...
     }
 }
