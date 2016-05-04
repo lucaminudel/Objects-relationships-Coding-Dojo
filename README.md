@@ -36,7 +36,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
 5. **Right thigh and right lower limb**
   - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
-  - [x] update the the two dashboard reports accordingly.
+  - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. What do you think of this coupling? 
 6. **Head**
   - [x] add a head with On/Off status and max charge, and connect it to the robot bus. 
@@ -96,7 +96,7 @@ As for the previous exercise, the list below contains all the feature requests t
   - [ ] does the collection of robot parts help?
 5. **Right thigh and right lower limb**
   - [x] add a right thigh and a right lower limb and connect them to the robot bus. They also have the On/Off status, and a max charge.
-  - [x] update the the two dashboard reports accordingly.
+  - [x] update the two dashboard reports accordingly.
   - [ ] take notes of the classes that had to change to add this part. Is it different from exercise 1? 
   - [ ] does the collection of robot parts help?
 6. **Head**
