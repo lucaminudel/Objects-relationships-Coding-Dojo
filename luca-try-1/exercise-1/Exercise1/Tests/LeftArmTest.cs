@@ -3,15 +3,15 @@
 namespace Exercise1.Tests
 {
     [TestFixture]
-    public class NeckTest
+    public class LeftArmTest
     {
-        private Neck _target;
+        private LeftArm _target;
 
 
         [SetUp]
         public void SetUp()
         {
-            _target = new Neck();
+            _target = new LeftArm();
         }
 
         [Test]

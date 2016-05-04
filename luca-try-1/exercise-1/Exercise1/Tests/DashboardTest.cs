@@ -23,7 +23,7 @@ namespace Exercise1.Tests
             {
                 "Trunk is: On", 
                 "  Shoulders is: On", 
-                "    Neck is: Off", 
+                "    Left arm is: Off", 
                 "    Head is: Off", 
                 "  Hip is: On", 
                 "    Right thigh is: On",
@@ -37,7 +37,7 @@ namespace Exercise1.Tests
         [Test]
         public void recharge_costs_report_for_the_all_parts()
         {
-            Assert.AreEqual(0.94, _target.RechargeCostsReport());
+            Assert.AreEqual(1.30, _target.RechargeCostsReport());
         }
 
 

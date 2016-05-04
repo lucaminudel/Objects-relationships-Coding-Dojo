@@ -6,12 +6,12 @@ namespace Exercise1
         public int MaxCharge { get { return 300; } }
         public bool IsOn { get { return true; } }
 
-        public Neck Neck { get; private set; }
+        public LeftArm LeftArm { get; private set; }
         public Head Head { get; private set; }
 
         public Shoulders()
         {
-            Neck = new Neck();
+            LeftArm = new LeftArm();
             Head = new Head();            
         }
 

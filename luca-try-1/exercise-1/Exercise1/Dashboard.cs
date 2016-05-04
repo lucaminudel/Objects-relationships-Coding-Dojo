@@ -19,7 +19,7 @@ namespace Exercise1
 
             report.AppendFormat("Trunk is: {0}\n", IsOnToString(_trunk.IsOn));
             report.AppendFormat("  Shoulders is: {0}\n", IsOnToString(_trunk.Shoulders.IsOn));
-            report.AppendFormat("    Neck is: {0}\n", IsOnToString(_trunk.Shoulders.Neck.IsOn));
+            report.AppendFormat("    Left arm is: {0}\n", IsOnToString(_trunk.Shoulders.LeftArm.IsOn));
             report.AppendFormat("    Head is: {0}\n", IsOnToString(_trunk.Shoulders.Head.IsOn));
             report.AppendFormat("  Hip is: {0}\n", IsOnToString(_trunk.Hip.IsOn));
             report.AppendFormat("    Right thigh is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.IsOn));
@@ -32,7 +32,7 @@ namespace Exercise1
         public double RechargeCostsReport()
         {
             return (_trunk.Shoulders.MaxCharge
-                + _trunk.Shoulders.Neck.MaxCharge
+                + _trunk.Shoulders.LeftArm.MaxCharge
                 + _trunk.Shoulders.Head.MaxCharge
                 + _trunk.Hip.MaxCharge
                 + _trunk.Hip.RightThigh.MaxCharge
