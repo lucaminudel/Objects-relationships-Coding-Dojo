@@ -77,13 +77,13 @@ As for the previous exercise, the list below contains all the feature requests t
 
 1. **Right foot**
   - [x] Implement a robot right foot. 
-  - [x] The right foot also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. **No need to expose this as public getter.**
-  - [x] Finally the right foot also has a current On/Off switch status. **No need to expose this as public getter.**
+  - [x] The right foot also has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. No need to expose this as public getter.
+  - [x] Finally the right foot also has a current On/Off switch status. No need to expose this as public getter.
   - [ ] FYI right foot and each other robot parts impements commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
   - [x] it has an On/Off status like the right foot.
-  - [x] the right foot is connected to the robot bus. **No need to expose this as public getter.** Use dependency injection in the robot bus constructor to get reference to the right foot. Continue to do the same for the other robot parts in the following step.
+  - [x] the right foot is connected to the robot bus. No need to expose this as public getter. Use dependency injection in the robot bus constructor to get reference to the right foot. Continue to do the same for the other robot parts in the following step.
   - [ ] FYI When the robot bus receive a command, the command is sent to the right foot and every other robot parts connected. The commands transmission implementation is also omitted in this exercise.
 3. **Left arm**
   - [x] like the right foot it has an On/Off switch status and the max charge of the internal battery.
