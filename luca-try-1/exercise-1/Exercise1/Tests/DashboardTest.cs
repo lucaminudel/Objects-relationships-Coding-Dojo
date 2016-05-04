@@ -27,8 +27,8 @@ namespace Exercise1.Tests
                 "    Head is: Off", 
                 "  Hip is: On", 
                 "    Right thigh is: On",
-                "    Right lower limb is: On",
-                "    Right foot is: On", ""
+                "      Right lower limb is: On",
+                "        Right foot is: On", ""
             };
 
             Assert.AreEqual(string.Join("\n", reportItems), _target.OnOffReport());

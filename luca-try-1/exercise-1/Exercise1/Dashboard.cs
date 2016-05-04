@@ -23,8 +23,8 @@ namespace Exercise1
             report.AppendFormat("    Head is: {0}\n", IsOnToString(_trunk.Shoulders.Head.IsOn));
             report.AppendFormat("  Hip is: {0}\n", IsOnToString(_trunk.Hip.IsOn));
             report.AppendFormat("    Right thigh is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.IsOn));
-            report.AppendFormat("    Right lower limb is: {0}\n", IsOnToString(_trunk.Hip.RightLowerLimb.IsOn));
-            report.AppendFormat("    Right foot is: {0}\n", IsOnToString(_trunk.Hip.RightFoot.IsOn));
+            report.AppendFormat("      Right lower limb is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.RightLowerLimb.IsOn));
+            report.AppendFormat("        Right foot is: {0}\n", IsOnToString(_trunk.Hip.RightThigh.RightLowerLimb.RightFoot.IsOn));
 
             return report.ToString();
         }
@@ -36,8 +36,8 @@ namespace Exercise1
                 + _trunk.Shoulders.Head.MaxCharge
                 + _trunk.Hip.MaxCharge
                 + _trunk.Hip.RightThigh.MaxCharge
-                + _trunk.Hip.RightLowerLimb.MaxCharge
-                + _trunk.Hip.RightFoot.MaxCharge
+                + _trunk.Hip.RightThigh.RightLowerLimb.MaxCharge
+                + _trunk.Hip.RightThigh.RightLowerLimb.RightFoot.MaxCharge
                 ) * 0.2 / 1000;
         } 
         
