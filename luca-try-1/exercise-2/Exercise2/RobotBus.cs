@@ -6,9 +6,9 @@ namespace Exercise2
         private readonly bool _isOn = true;
         private readonly IRobotPart[] _robotParts;
 
-        public RobotBus(LeftArm leftArm, RightFoot rightFoot)
+        public RobotBus(LeftArm leftArm, RightFoot rightFoot, RightThigh rightThigh)
         {
-            _robotParts = new IRobotPart[] {leftArm, rightFoot};
+            _robotParts = new IRobotPart[] { leftArm, rightFoot, rightThigh };
         }
 
         public void AcceptLogVisitor(Dashboard visitor)
