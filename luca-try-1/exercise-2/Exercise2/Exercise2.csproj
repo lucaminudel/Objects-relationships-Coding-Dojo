@@ -46,6 +46,7 @@
     <Compile Include="Hip.cs" />
     <Compile Include="RightLowerLimb.cs" />
     <Compile Include="RightThigh.cs" />
+    <Compile Include="Shoulder.cs" />
     <Compile Include="Tests\DashboardTest.cs" />
     <Compile Include="IRobotPart.cs" />
     <Compile Include="LeftArm.cs" />
