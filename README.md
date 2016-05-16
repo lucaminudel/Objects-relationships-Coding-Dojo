@@ -16,7 +16,7 @@ This repository contains two coding exercises, to be finished in sequence.
 The goal of this exercise is to experience the impact of simplistic design when adding new features.
 In order to keep the design simplistic, 
 - create direct dependencies between objects. I.e. for A -> B, concrete class A will instantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques;
-- each feature that requires computations on the whole object graph, should be implemented in a single method that navigate the graph and compute the operation instead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
+- each feature that requires computations on the whole object graph, should be implemented in a single method that navigates the graph and computes the operation instead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
 
 The list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. Every feature request should only take few minutes to implement.
 
@@ -72,8 +72,8 @@ The list below contains all the feature requests to be implemented. Implement on
 
 The goal of this exercise is to experience a different design that reduces the impact of changes to the object graph and the related objects. In order to use a different design,
 - invert the dependencies from the dashboard functions (On/Off status report and total cost to re-charge all the internal batteries) to the robot parts so that the robot parts have a dependency to the dashboard and not the opposite;
-- use a common interface and if needed the adapter pattern to abstract away differences between different robot parts;
-- pass the dashboard to the robot parts as a visitor in the visitor pattern; let each robot part take care of passing the dashboard to the robot parts directly composed/connected so that the responsibility of navigating the object graph moves from the dashboard functions into each robot part that compose/connects another robot part(s).
+- use a common interface and, if needed, the adapter pattern to abstract away differences between different robot parts;
+- pass the dashboard object to the robot parts as a visitor in the visitor pattern; let each robot part take care of passing the dashboard to the other directly contained/referenced robot parts,so that the responsibility of navigating the object graph moves from the dashboard functions/methods into each robot part.
 
 As for the previous exercise, the list below contains all the feature requests to be implemented. Implement one feature request at a time, without anticipating the following ones. Every feature request should only take few minutes to implement.
 
