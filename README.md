@@ -1,6 +1,7 @@
 # Objects relationships - Coding-Dojo
 
-This repository contains two coding exercises to experience the impact of composition and other techniques on objects relationships encapsulation as compared to the simplistic design approach.
+This repository contains two coding exercises. The goal of the exercises is to experience the impact of composition and other techniques to encapsulate objects relationships (in exercise 2), and compare it with the simplistic design approach (exercise 1). The goal is reached solving in sequence exercise 1 and 2, and then comparing how easy or how difficult it was to add each new feature on both settings.
+Exercise 1 should take about 2 hours, and exercise 2 should take abount 1 and half hours.
 
 
 **Prerequisites:**
@@ -9,7 +10,7 @@ This repository contains two coding exercises to experience the impact of compos
 
 ## Exercise 1. Simplistic design
 
-The goal of this exercise is to experience the impact of simplistic design when new code changes are required.
+The goal of this exercise is to experience the impact of simplistic design when adding new features.
 In order to keep the design simplistic, 
 - create direct dependencies between objects. I.e. for A -> B, concrete class A will instantiate and reference directly concrete class B instead of using interfaces or other abstractions or dependency inversions techniques;
 - each feature that requires computations on the whole object graph, should be implemented in a single method that navigate the graph and compute the operation instead of introducing abstractions such as composite design pattern, visitor pattern, or any other abstraction.
@@ -66,7 +67,7 @@ The list below contains all the feature requests to be implemented. Implement on
 ## Exercise 2. Target design
 
 
-The goal of this exercise is to experience a different design that reduces the impact of changes to objects in the object graph and of changes to the object graph itself. In order to use a different design,
+The goal of this exercise is to experience a different design that reduces the impact of changes to the object graph and the related objects. In order to use a different design,
 - invert the dependencies from the dashboard functions (On/Off status report and total cost to re-charge all the internal batteries) to the robot parts so that the robot parts have a dependency to the dashboard and not the opposite;
 - use a common interface and if needed the adapter pattern to abstract away differences between different robot parts;
 - pass the dashboard to the robot parts as a visitor in the visitor pattern; let each robot part take care of passing the dashboard to the robot parts directly composed/connected so that the responsibility of navigating the object graph moves from the dashboard functions into each robot part that compose/connects another robot part(s).
