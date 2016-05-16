@@ -1,7 +1,8 @@
 # Objects relationships - Coding-Dojo
 
-This repository contains two coding exercises. The goal of the exercises is to experience the impact of composition and other techniques to encapsulate objects relationships (in exercise 2), and compare it with the simplistic design approach (exercise 1). The goal is reached solving in sequence exercise 1 and 2, and then comparing how easy or how difficult it was to add each new feature on both settings.
-Exercise 1 should take about 2 hours, and exercise 2 should take abount 1 and half hours.
+This repository contains two coding exercises. **The goal** of the exercises is to experience the impact of composition and other techniques to encapsulate objects relationships (in exercise 2), and compare it with the simplistic design approach (exercise 1). The goal is reached solving in sequence exercise 1 and 2, and then comparing how easy or how difficult it was to add each new feature on both settings.
+
+**Timing:** exercise 1 should take about 2 hours, and exercise 2 should take abount 1 and half hours.
 
 
 **Prerequisites:**
