@@ -26,7 +26,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] Implement a robot left arm. 
   - [x] The left arm has a max charge (in Ampere Hour or Ah) of its internal 24KV battery.
   - [x] Finally the left arm also has a current On/Off switch status.
-  - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
+  - [ ] FYI left arm and every robot part implements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
   - [x] it has an On/Off status like the left arm.
@@ -83,7 +83,7 @@ As for the previous exercise, the list below contains all the feature requests t
   - [x] Implement a robot left arm. 
   - [x] The left arm has a max charge (in Ampere Hour or Ah) of its internal 24KV battery. No need to expose this as public getter.
   - [x] Finally the left arm also has a current On/Off switch status.  No need to expose this as public getter.
-  - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
+  - [ ] FYI left arm and every robot part implements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
   - [x] it has an On/Off status like the left arm.
