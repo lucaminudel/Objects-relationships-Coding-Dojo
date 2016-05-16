@@ -2,7 +2,7 @@
 
 This repository contains two coding exercises, to be finished in sequence.
 
-**The goal** of these exercises is to experience the impact of composition and other design techniques to encapsulate objects relationships (in exercise 2), and compare it with the simplistic design approach (exercise 1). The goal is reached solving in sequence exercise 1 and 2, and then comparing how easy or how difficult it was to add each new feature on both settings.
+**The goal** of these exercises is to experience the impact of composition and other design techniques to encapsulate objects relationships (in exercise 2), and compare that with simplistic design approach (from exercise 1). The goal is reached solving in sequence exercise 1 and 2, and then comparing how easy or how difficult it was to add each new feature on both settings.
 
 **Timing:** exercise 1 takes about 2 hours, and exercise 2 takes about 1 and half hours.
 
