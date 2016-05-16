@@ -36,8 +36,8 @@ The list below contains all the feature requests to be implemented. Implement on
   - [x] like the left arm. it has an On/Off switch status and the max charge of the internal battery.
   - [x] the right foot is connected to the robot bus too.
 4. **Dashboard**
-  - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
-  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
+  - [x] implement a function/method that navigates all the robot parts starting from robot bus, and reports the On/Off status of all robot parts, including the robot bus status. Report should have one line per robot part, and should use identation to visualise the tree structure, see an example [here](https://en.wikipedia.org/wiki/Tree_structure#Outlines_and_tree_views).
+  - [x] implement a function/method that navigates all the robot parts starting from robot bus, and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
 5. **Right thigh**
   - [x] add a right thigh and connect it to the robot bus. It also has the On/Off status, and a max charge.
   - [x] update the two dashboard reports accordingly.
@@ -92,10 +92,10 @@ As for the previous exercise, the list below contains all the feature requests t
 3. **Right foot**
   - [x] like the left arm. it has an On/Off switch status and the max charge of the internal battery.
   - [x] the right foot is connected to the robot bus too.
-  - [ ] you can introduce abstractions to abstract away differences between robot parts, and group them into a collaction of  uniform items.
+  - [ ] you can introduce abstractions to abstract away differences between robot parts, and group them into a collection of  uniform items.
 4. **Dashboard**
-  - [x] implement a function that navigates all the robot parts from robot bus and reports the On/Off status of all robot parts, including the robot bus status itself, with one line per part and with identation to visualise the tree structure.
-  - [x] implement a function that navigates the object graph from robot bus and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
+  - [x] implement a function/method that navigates all the robot parts starting from robot bus, and reports the On/Off status of all robot parts, including the robot bus status. Report should have one line per robot part, and should use identation to visualise the tree structure, see an example [here](https://en.wikipedia.org/wiki/Tree_structure#Outlines_and_tree_views).
+  - [x] implement a function/method that navigates all the robot parts starting from robot bus, and calculates the total cost to re-charge all the internal batteries; the cost per 1000 Ah is £0.2.
   - [ ] use the visitor pattern and pass around the dashboard object.
   - [ ] does the collection of robot parts help?
 5. **Right thigh**
