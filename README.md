@@ -29,7 +29,7 @@ The list below contains all the feature requests to be implemented. Implement on
   - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
-  - [x] it has an On/Off status like the right foot.
+  - [x] it has an On/Off status like the left arm.
   - [x] the left arm is connected to the robot bus.
   - [ ] FYI When the robot bus receive a command, the command is sent to the left arm and every other robot parts connected to the bus. The commands transmission implementation is also omitted in this exercise.
 3. **Right foot**
@@ -86,7 +86,7 @@ As for the previous exercise, the list below contains all the feature requests t
   - [ ] FYI left arm and each other robot parts impements many complex commands specific to that part, their implementation is omitted in this exercise.
 2. **Robot bus**
   - [x] the robot bus is electricity powered, so it doesn't have a battery and its max charge value.
-  - [x] it has an On/Off status like the right foot.
+  - [x] it has an On/Off status like the left arm.
   - [x] the left arm is connected to the robot bus. No need to expose this as public getter. Use dependency injection in the robot bus constructor to get reference to the left arm. Continue to do the same for the other robot parts in the following step.
   - [ ] FYI When the robot bus receive a command, the command is sent to the left arm  and every other robot parts connected to the bus. The commands transmission implementation is also omitted in this exercise.
 3. **Right foot**
