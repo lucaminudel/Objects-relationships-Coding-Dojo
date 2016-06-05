@@ -1,0 +1,26 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "description": "This repository contains two coding exercises, to be finished in sequence.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r should",
+    "wtest": "npm test -- -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simoneb/Objects-relationships-Coding-Dojo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simoneb/Objects-relationships-Coding-Dojo/issues"
+  },
+  "homepage": "https://github.com/simoneb/Objects-relationships-Coding-Dojo#readme",
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
+  }
+}
