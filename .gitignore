@@ -1,10 +1,7 @@
-luca-try-1/exercise-1/Exercise1/bin
-luca-try-1/exercise-1/Exercise1/obj
-luca-try-1/exercise-1/Exercise1/Exercise1.csproj.user
-luca-try-1/exercise-1/Exercise1/Exercise1.sln.DotSettings.user
-luca-try-1/exercise-1/Exercise1/Exercise1.v11.suo
-luca-try-1/exercise-2/Exercise2/bin
-luca-try-1/exercise-2/Exercise2/obj
-luca-try-1/exercise-2/Exercise2/Exercise2.sln.DotSettings.user
-luca-try-1/exercise-2/Exercise2/Exercise2.v11.suo
-Exercise2.sln.DotSettings.user
+bin/
+obj/
+_ReSharper*/
+*.suo
+*.user
+*.userprefs
+.DS_Store
