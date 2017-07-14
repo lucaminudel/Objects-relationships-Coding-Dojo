@@ -9,7 +9,7 @@ This repository contains two coding exercises, to be finished in sequence.
 
 **Prerequisites:**
 - Practical understanding of basic design principles, SOLID principles and Simple Design
-- Experience with fundamental refactoring and design patterns of unit testing as in coding-dojo [Refactoring legacy code driven by tests] (https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples/blob/master/TDDMicroExercises/README.md)
+- Experience with fundamental refactoring and design patterns of unit testing as in coding-dojo [Refactoring legacy code driven by tests](https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples/blob/master/TDDMicroExercises/README.md)
 
 ## Exercise 1. Simplistic design
 
