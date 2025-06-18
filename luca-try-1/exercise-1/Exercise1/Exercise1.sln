@@ -1,13 +1,6 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1.csproj", "{3923E971-B348-49BB-82D5-C1C0217C0BDE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{8969E7C9-D027-44FA-99AC-709C209A66DA}"
-	ProjectSection(SolutionItems) = preProject
-		lib\nunit.framework.dll = lib\nunit.framework.dll
-		lib\nunit.framework.xml = lib\nunit.framework.xml
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Exercise1.csproj", "{3923E971-B348-49BB-82D5-C1C0217C0BDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
